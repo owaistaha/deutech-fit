@@ -1,0 +1,10 @@
+node_modules/
+.plasmo/
+build/
+.env*
+*.zip
+.DS_Store
+*.tsbuildinfo
+
+# Separate repo (published at owaistaha/deutech-fit-privacy)
+store/privacy-site/

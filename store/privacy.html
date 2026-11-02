@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>DeuTech Fit — Privacy Policy</title>
+<meta name="description" content="Privacy policy for the DeuTech Fit Chrome extension." />
+<style>
+  body { margin: 0; background: #020617; color: #e2e8f0; font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 48px 24px 80px; }
+  h1 { color: #fff; font-size: 28px; margin: 0 0 4px; }
+  h2 { color: #fff; font-size: 19px; margin: 36px 0 8px; }
+  a { color: #a5b4fc; }
+  .muted { color: #94a3b8; font-size: 14px; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; margin-top: 8px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #1e293b; vertical-align: top; }
+  th { color: #cbd5e1; }
+  .badge { display: inline-block; width: 36px; height: 36px; border-radius: 10px; background: linear-gradient(135deg, #6366f1, #9333ea); color: #fff; font-weight: 700; font-size: 13px; text-align: center; line-height: 36px; margin-bottom: 16px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="badge">DF</div>
+  <h1>DeuTech Fit — Privacy Policy</h1>
+  <p class="muted">Last updated: 1 November 2026</p>
+
+  <p>DeuTech Fit ("the extension") is a Chrome extension that analyzes job postings on LinkedIn and StepStone against your CV. This policy explains what data the extension handles and where it goes.</p>
+
+  <h2>Summary</h2>
+  <ul>
+    <li>The developer of DeuTech Fit <strong>does not collect, receive, store or sell any of your data</strong>. There is no DeuTech Fit server, account, analytics or advertising.</li>
+    <li>Your settings and CV text are stored <strong>only in your browser</strong> (<code>chrome.storage.local</code>).</li>
+    <li>When you click <strong>Analyze</strong>, the job posting and your CV text are sent <strong>directly from your browser to Google's Gemini API</strong>, using <strong>your own API key</strong>.</li>
+  </ul>
+
+  <h2>Data the extension handles</h2>
+  <table>
+    <tr><th>Data</th><th>Where it is stored</th><th>Where it is sent</th></tr>
+    <tr><td>Your Gemini API key</td><td>Your browser only</td><td>Google Gemini API (as authentication)</td></tr>
+    <tr><td>CV / resume text (extracted locally from your PDF)</td><td>Your browser only</td><td>Google Gemini API, when you click Analyze</td></tr>
+    <tr><td>German level, residence-permit type, target role</td><td>Your browser only</td><td>Google Gemini API, when you click Analyze</td></tr>
+    <tr><td>Job posting text (title, company, location, description)</td><td>Your browser only (last result)</td><td>Google Gemini API, when you click Analyze</td></tr>
+    <tr><td>Your PDF file</td><td><strong>Not stored.</strong> Text is extracted on your device and the file is discarded</td><td>Nowhere</td></tr>
+  </table>
+  <p>To read the job you selected, the extension may also request that job's public posting page from linkedin.com. The request sends no cookies or personal data.</p>
+
+  <h2>Google Gemini API</h2>
+  <p>Analysis is performed by Google's Gemini API under <strong>your</strong> API key and your agreement with Google. Google's handling of that data is governed by the <a href="https://ai.google.dev/gemini-api/terms">Gemini API Additional Terms of Service</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. In particular:</p>
+  <ul>
+    <li><strong>If you are in the EEA, Switzerland or the UK</strong>, Google applies its paid-service data terms even to free usage: your prompts and responses are not used to improve Google's products.</li>
+    <li><strong>Elsewhere, on the free (unpaid) tier</strong>, Google may use submitted content to improve its products, and human reviewers may read it. If you don't want that, use a paid Gemini API key, or remove sensitive details (phone number, address) from the CV text in Settings before analyzing.</li>
+  </ul>
+
+  <h2>Donations</h2>
+  <p>The "Buy me a coffee" button opens <a href="https://buymeacoffee.com/owaistaha6h">buymeacoffee.com</a> in a new tab. Donations are optional and handled entirely by Buy Me a Coffee under its own privacy policy. The extension never sees or processes any payment information.</p>
+
+  <h2>Data retention and deletion</h2>
+  <p>All data stays in your browser until you remove it. To delete everything, either clear the fields in DeuTech Fit Settings and click Save, or uninstall the extension, which deletes all of its stored data.</p>
+
+  <h2>Data sharing</h2>
+  <p>The developer does not sell, share or transfer your data to anyone. Data goes only to Google's Gemini API, as described above, to provide the extension's single purpose.</p>
+
+  <h2>Children</h2>
+  <p>The extension is not directed at children under 16.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the "Last updated" date above will be updated and the new version published at this URL.</p>
+
+  <h2>Contact</h2>
+  <p>Questions: <a href="mailto:owaistaha67@gmail.com">owaistaha67@gmail.com</a></p>
+</main>
+</body>
+</html>

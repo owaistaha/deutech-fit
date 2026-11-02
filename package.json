@@ -1,0 +1,40 @@
+{
+  "name": "deutech-fit",
+  "displayName": "DeuTech Fit: Germany Job Checker – German Level, Visa & Werkstudent",
+  "version": "0.1.0",
+  "description": "Check LinkedIn & StepStone jobs for hidden German language requirements, student visa/Werkstudent fit & missing German CV keywords.",
+  "author": "Owais Taha",
+  "private": true,
+  "scripts": {
+    "dev": "plasmo dev",
+    "build": "plasmo build",
+    "package": "plasmo build && plasmo package",
+    "typecheck": "tsc --noEmit"
+  },
+  "manifest": {
+    "host_permissions": [
+      "https://generativelanguage.googleapis.com/*",
+      "https://www.linkedin.com/*"
+    ],
+    "permissions": [
+      "storage",
+      "sidePanel"
+    ]
+  },
+  "dependencies": {
+    "@plasmohq/storage": "^1.15.0",
+    "pdfjs-dist": "^3.11.174",
+    "plasmo": "^0.90.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.3.7",
+    "@types/node": "^26.6.6",
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "postcss": "^8.5.32",
+    "tailwindcss": "3.4",
+    "typescript": "^5.9.3"
+  }
+}
